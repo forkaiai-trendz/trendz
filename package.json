@@ -1,0 +1,32 @@
+{
+  "name": "trendz",
+  "version": "1.0.0",
+  "description": "social media app about the latest fashion trends",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "fs": "0.0.1-security",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.5",
+    "npm": "^6.9.0",
+    "path": "^0.12.7",
+    "sequelize": "^4.43.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forkaiai-trendz/trendz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/forkaiai-trendz/trendz/issues"
+  },
+  "homepage": "https://github.com/forkaiai-trendz/trendz#readme"
+}
