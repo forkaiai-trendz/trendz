@@ -4,6 +4,7 @@
   "description": "social media app about the latest fashion trends",
   "main": "index.js",
   "dependencies": {
+    "animejs": "^3.0.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
@@ -12,7 +13,8 @@
     "mysql2": "^1.6.5",
     "npm": "^6.9.0",
     "path": "^0.12.7",
-    "sequelize": "^4.43.0"
+    "sequelize": "^4.43.0",
+    "vivus": "^0.4.4"
   },
   "devDependencies": {},
   "scripts": {
