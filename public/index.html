@@ -11,77 +11,124 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel='stylesheet' href='css/website.css'>
+    <link rel="stylesheet" href='css/website.css'>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- ANIME.JS Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <title>Trendz Website</title>
 </head>
-<body style="font-size: 20px; font-family: 'Playfair Display', serif">
+<body>
   <!-- NAVBAR STARTS HERE -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <a class="navbar-brand" href="#">TRENDZ</a>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#"><strong>TRENDZ</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav" style="float:left">
+        <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#" style="padding: 0 20px">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0 20px">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-arrow-right"></i>
               Women</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">Casual</a>
                 <a class="dropdown-item" href="#">Business Formal</a>
                 <a class="dropdown-item" href="#">Party Dresses</a>
                 <a class="dropdown-item" href="#">Active Wear</a>
                 <a class="dropdown-item" href="#">Plus Size</a>
-              </div>
+                <a class="dropdown-item" href="#">Accessories</a>
+              </ul>
           </li>
           <li class="nav-item active dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0 20px">Men</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men</a>
+            <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">Casual</a>
               <a class="dropdown-item" href="#">Suit and Tie</a>
               <a class="dropdown-item" href="#">Active Wear</a>
-            </div>
+              <a class="dropdown-item" href="#">Accessories</a>
+            </ul>
           </li>
           <li class="nav-item active dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0 20px">Kids</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Girl
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Baby</a>
-                  <a class="dropdown-item" href="#">Toddler</a>
-                  <a class="dropdown-item" href="#">Preschool</a>
-                </div> -->
-              </a>
-              <a class="dropdown-item" href="#">Boy
-                <!-- <a class="dropdown-item" href="#">Baby</a>
-                <a class="dropdown-item" href="#">Toddler</a>
-                <a class="dropdown-item" href="#">Preschool</a> -->
-              </a>
-            </div>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kids</a>
+            <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Girl</a>
+              <a class="dropdown-item" href="#">Boy</a>
+              <a class="dropdown-item" href="#">Accessories</a>
+            </ul>
           </li>
-        </ul>
-        <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link signup" href="#" style="padding: 0 20px;">Sign Up</a>
+              <a class="nav-link" href="companyprofile.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Company Profile
+              </a>
+            </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sign Up
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Log In
+            </a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="middle-pict" style="max-width: 800px; display: block; margin: auto; margin-top: 10px">
+
+    <!--==== MIDDLE PICT ====-->
+    <div class="middle-pict">
       <!--========== SLIDER ==========-->
        <ul class="slider">
-         <li><img src="photos/womenFashion.jpg" style="width:100%;"/></li>
-         <li><img src="photos/menFashion.jpg" style="width:100%"/></li>
-         <li><img src="photos/girlsFashion.jpg" style="width:100%"/></li>
-         <li><img src="photos/boysFashion.jpg" style="width:100%"/></li>
+         <li><img src="photos/womenFashion.jpg" /></li>
+         <li><img src="photos/menFashion.jpg" /></li>
+         <li><img src="photos/girlsFashion.jpg" /></li>
+         <li><img src="photos/boysFashion.jpg" /></li>
        </ul>
     </div>
+
+  <!-- WELCOME MESSAGE -->
+    <div class="welcome">
+      <h3 class="welcmsg">
+        <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters">WELCOME TO OUR PAGE</span>
+          </span>
+       </h3>
+    </div>
+
+    <!--=== LOGOS ===-->
+    <div class="logos">
+      <h3><strong>SOCIAL MEDIA</strong></h3>
+      <ul class="d-flex flex-row justify-content-center list-unstyled" style="margin-bottom: 0">
+        <li class="nav-item mx-1" id="t">
+          <a href="https://twitter.com/trndzstylz" target= "_blank">
+            <img src="logo/twitterlogo.png" style="width: 58px; height: 58px">
+          </a>
+        </li>
+        <li class="nav-item mx-1" id="ig">
+          <a href="https://www.instagram.com/trndzstylz/" target= "_blank">
+            <img src="logo/iglogo.png" style="width: 62px">
+          </a>
+        </li>
+        <li class="nav-item mx-1" id="fb">
+          <!-- <a href="https://github.com/nataliaaulia" target= "_blank"> -->
+            <img src="logo/fblogo.png" style="width: 57px; height: 57px">
+           </a>
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+        Copyright &copy; 2019 \\ moving letters inspired by @tobiasahlin
+    </footer>
 
     <!-- PAGE SCRIPTS -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -91,5 +138,46 @@
         $('.slider').bxSlider();
       });
     </script>
+
+   <!-- ANIME.JS SCRIPT -->
+    <script>
+      var ml = { timelines: {}}; 
+
+      $('.welcmsg .letters').each(function(){
+      $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+      });
+    
+      ml.timelines["welcmsg"] = anime.timeline({loop: true})
+        .add({
+          targets: '.welcmsg .line',
+          scaleY: [0,1],
+          opacity: [0.5,1],
+          easing: "easeOutExpo",
+          duration: 700
+        })
+        .add({
+          targets: '.welcmsg .line',
+          translateX: [0,$(".welcmsg .letters").width()],
+          easing: "easeOutExpo",
+          duration: 700,
+          delay: 100
+        }).add({
+          targets: '.welcmsg .letter',
+          opacity: [0,1],
+          easing: "easeOutExpo",
+          duration: 600,
+          offset: '-=775',
+          delay: function(el, i) {
+            return 34 * (i+1)
+          }
+        }).add({
+          targets: '.welcmsg',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+      });
+    </script>
+
 </body>
 </html>
